@@ -21,7 +21,9 @@ class _MovementsPageWidgetState extends State<MovementsPageWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'My Movements',
+          FFLocalizations.of(context).getText(
+            'a6n096zr' /* My Movements */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,

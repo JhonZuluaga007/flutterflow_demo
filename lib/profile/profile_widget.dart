@@ -156,7 +156,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Edit Profile',
+                                FFLocalizations.of(context).getText(
+                                  '24k8qo1m' /* Edit Profile */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .subtitle2
                                     .override(
@@ -217,7 +219,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Change Password',
+                                FFLocalizations.of(context).getText(
+                                  'bl7wt7kv' /* Change Password */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .subtitle2
                                     .override(
@@ -278,7 +282,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Notification Settings',
+                                FFLocalizations.of(context).getText(
+                                  'dmro3645' /* Notification Settings */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .subtitle2
                                     .override(
@@ -339,7 +345,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Text(
-                                'Terms of Services',
+                                FFLocalizations.of(context).getText(
+                                  'cqo5kk0n' /* Terms of Services */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
                                     .override(
@@ -383,7 +391,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                       (r) => false,
                     );
                   },
-                  text: 'Log Out',
+                  text: FFLocalizations.of(context).getText(
+                    '3fk9yc84' /* Log Out */,
+                  ),
                   options: FFButtonOptions(
                     width: 110,
                     height: 50,

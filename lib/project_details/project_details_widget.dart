@@ -122,7 +122,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              '123 Disney Way, Willingmington, WV 24921',
+                              FFLocalizations.of(context).getText(
+                                'utx0msla' /* 123 Disney Way, Willingmington... */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyText2
                                   .override(
@@ -155,7 +157,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                               child: Text(
-                                '4/5 Reviews',
+                                FFLocalizations.of(context).getText(
+                                  'qbcworya' /* 4/5 Reviews */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText2
                                     .override(
@@ -178,7 +182,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(12, 0, 0, 0),
                               child: Text(
-                                'available tokens : ',
+                                FFLocalizations.of(context).getText(
+                                  'obbc6rf3' /* available tokens :  */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText2
                                     .override(
@@ -217,7 +223,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Text(
-                              'DESCRIPTION',
+                              FFLocalizations.of(context).getText(
+                                'cuvb58ws' /* DESCRIPTION */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyText1
                                   .override(
@@ -240,7 +248,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                                 padding:
                                     EdgeInsetsDirectional.fromSTEB(0, 0, 0, 24),
                                 child: Text(
-                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+                                  FFLocalizations.of(context).getText(
+                                    'erftpqbj' /* Lorem ipsum dolor sit amet, co... */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText2
                                       .override(
@@ -308,7 +318,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                                   padding: EdgeInsetsDirectional.fromSTEB(
                                       4, 0, 0, 0),
                                   child: Text(
-                                    '+ taxes',
+                                    FFLocalizations.of(context).getText(
+                                      '31r6490d' /* + taxes */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText2
                                         .override(
@@ -325,7 +337,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                               padding:
                                   EdgeInsetsDirectional.fromSTEB(0, 4, 0, 0),
                               child: Text(
-                                'per night',
+                                FFLocalizations.of(context).getText(
+                                  'pdpvxxtg' /* per night */,
+                                ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText2
                                     .override(
@@ -370,7 +384,9 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
 
                             setState(() {});
                           },
-                          text: 'Buy now',
+                          text: FFLocalizations.of(context).getText(
+                            'vx2kw8vj' /* Buy now */,
+                          ),
                           options: FFButtonOptions(
                             width: 130,
                             height: 50,

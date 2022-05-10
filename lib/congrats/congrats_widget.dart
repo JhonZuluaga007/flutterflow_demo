@@ -44,7 +44,9 @@ class _CongratsWidgetState extends State<CongratsWidget> {
             ),
           ),
           Text(
-            'Congrats!',
+            FFLocalizations.of(context).getText(
+              'w048f900' /* Congrats! */,
+            ),
             style: FlutterFlowTheme.of(context).title2.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
@@ -55,7 +57,9 @@ class _CongratsWidgetState extends State<CongratsWidget> {
           Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0, 12, 0, 0),
             child: Text(
-              'Thanks for your purchase.',
+              FFLocalizations.of(context).getText(
+                'f7qai3na' /* Thanks for your purchase. */,
+              ),
               style: FlutterFlowTheme.of(context).subtitle2.override(
                     fontFamily: 'Outfit',
                     color: Colors.white,
@@ -78,7 +82,9 @@ class _CongratsWidgetState extends State<CongratsWidget> {
                   ),
                 );
               },
-              text: 'Go Home',
+              text: FFLocalizations.of(context).getText(
+                'ptyrqfjw' /* Go Home */,
+              ),
               options: FFButtonOptions(
                 width: 130,
                 height: 50,

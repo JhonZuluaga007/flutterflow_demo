@@ -31,7 +31,9 @@ class _ProjectWidgetState extends State<ProjectWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'Project',
+          FFLocalizations.of(context).getText(
+            'm2giqynk' /* Project */,
+          ),
           style: FlutterFlowTheme.of(context).title1.override(
                 fontFamily: 'Lexend Deca',
                 color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -72,7 +74,9 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                       controller: searchFieldController,
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: 'Type to search here...',
+                        hintText: FFLocalizations.of(context).getText(
+                          'fihnnobs' /* Type to search here... */,
+                        ),
                         hintStyle:
                             FlutterFlowTheme.of(context).bodyText2.override(
                                   fontFamily: 'Lexend Deca',
@@ -248,7 +252,10 @@ class _ProjectWidgetState extends State<ProjectWidget> {
                                               ),
                                             );
                                           },
-                                          text: 'Details',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'qziufx2c' /* Details */,
+                                          ),
                                           icon: Icon(
                                             Icons.add_rounded,
                                             color: Colors.white,

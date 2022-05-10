@@ -86,7 +86,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                           controller: fullNameController,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: 'full name',
+                            labelText: FFLocalizations.of(context).getText(
+                              'ahzz4do2' /* full name */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -94,7 +96,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                                       fontSize: 14,
                                       fontWeight: FontWeight.normal,
                                     ),
-                            hintText: 'full Name',
+                            hintText: FFLocalizations.of(context).getText(
+                              'dal9y0wd' /* full Name */,
+                            ),
                             hintStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -144,7 +148,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                           controller: emailAddressController,
                           obscureText: false,
                           decoration: InputDecoration(
-                            labelText: '\nemail',
+                            labelText: FFLocalizations.of(context).getText(
+                              'z8kw0knv' /* email */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -201,7 +207,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                           controller: passwordController,
                           obscureText: !passwordVisibility,
                           decoration: InputDecoration(
-                            labelText: 'password',
+                            labelText: FFLocalizations.of(context).getText(
+                              'yok1g5im' /* password */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -270,7 +278,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                           controller: password2Controller,
                           obscureText: !password2Visibility,
                           decoration: InputDecoration(
-                            labelText: 'confirm password',
+                            labelText: FFLocalizations.of(context).getText(
+                              'al6fjrv2' /* confirm password */,
+                            ),
                             labelStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -374,7 +384,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                             (r) => false,
                           );
                         },
-                        text: 'Register',
+                        text: FFLocalizations.of(context).getText(
+                          'u8u29o4j' /* Register */,
+                        ),
                         options: FFButtonOptions(
                           width: 130,
                           height: 60,
@@ -404,7 +416,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'do you already have an account?',
+                        FFLocalizations.of(context).getText(
+                          'z6rlr8cw' /* do you already have an account... */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyText1.override(
                               fontFamily: 'Lexend Deca',
                               color: Colors.white,
@@ -421,7 +435,9 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                             ),
                           );
                         },
-                        text: 'Login',
+                        text: FFLocalizations.of(context).getText(
+                          '9nfqfic4' /* Login */,
+                        ),
                         options: FFButtonOptions(
                           width: 90,
                           height: 30,

@@ -23,7 +23,30 @@ class _TestPageWidgetState extends State<TestPageWidget> {
           onTap: () => FocusScope.of(context).unfocus(),
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [],
+            children: [
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'uae2fvfd' /* Hello World */,
+                  ),
+                  style: FlutterFlowTheme.of(context).bodyText1,
+                ),
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(10, 0, 10, 0),
+                child: Text(
+                  FFLocalizations.of(context).getText(
+                    'tlzd8yte' /* Hello World jjdhajdkhksjjjadkc... */,
+                  ),
+                  textAlign: TextAlign.start,
+                  style: FlutterFlowTheme.of(context).bodyText1.override(
+                        fontFamily: 'Poppins',
+                        lineHeight: 2,
+                      ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

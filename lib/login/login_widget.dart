@@ -87,7 +87,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       fontSize: 14,
                                       fontWeight: FontWeight.normal,
                                     ),
-                            hintText: 'email',
+                            hintText: FFLocalizations.of(context).getText(
+                              'bxhhwg93' /* email */,
+                            ),
                             hintStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -145,7 +147,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                                       fontSize: 14,
                                       fontWeight: FontWeight.normal,
                                     ),
-                            hintText: 'password',
+                            hintText: FFLocalizations.of(context).getText(
+                              'g8m6nriu' /* password */,
+                            ),
                             hintStyle:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Lexend Deca',
@@ -222,7 +226,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                             (r) => false,
                           );
                         },
-                        text: 'Login',
+                        text: FFLocalizations.of(context).getText(
+                          'e88hwli0' /* Login */,
+                        ),
                         options: FFButtonOptions(
                           width: 130,
                           height: 60,
@@ -246,7 +252,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                         onPressed: () {
                           print('Button-ForgotPassword pressed ...');
                         },
-                        text: 'Olvidaste tu contraseña ?',
+                        text: FFLocalizations.of(context).getText(
+                          '4euf2hmm' /* Olvidaste tu contraseña ? */,
+                        ),
                         options: FFButtonOptions(
                           width: 170,
                           height: 30,
@@ -276,7 +284,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'Don\'t have an account?',
+                        FFLocalizations.of(context).getText(
+                          'osaqoygp' /* Don't have an account? */,
+                        ),
                         style: FlutterFlowTheme.of(context).bodyText1.override(
                               fontFamily: 'Lexend Deca',
                               color: Colors.white,
@@ -293,7 +303,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                             ),
                           );
                         },
-                        text: 'Registro',
+                        text: FFLocalizations.of(context).getText(
+                          'dclajkbp' /* Registro */,
+                        ),
                         options: FFButtonOptions(
                           width: 90,
                           height: 30,

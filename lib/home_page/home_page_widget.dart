@@ -22,7 +22,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         backgroundColor: FlutterFlowTheme.of(context).primaryColor,
         automaticallyImplyLeading: false,
         title: Text(
-          'My project',
+          FFLocalizations.of(context).getText(
+            'tk66xwoq' /* Mi proyecto */,
+          ),
           style: FlutterFlowTheme.of(context).title2.override(
                 fontFamily: 'Poppins',
                 color: Colors.white,
@@ -87,7 +89,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Text(
-                                  'Ethiopian Natural',
+                                  FFLocalizations.of(context).getText(
+                                    'ht2uhsi0' /* Ethiopian Natural */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .title3
                                       .override(
@@ -105,7 +109,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             children: [
                               Expanded(
                                 child: Text(
-                                  'Meters',
+                                  FFLocalizations.of(context).getText(
+                                    'ugsng7ba' /* Meters */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -119,7 +125,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                               Expanded(
                                 child: Text(
-                                  'Process',
+                                  FFLocalizations.of(context).getText(
+                                    '06fe8cb3' /* Process */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -133,7 +141,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               ),
                               Expanded(
                                 child: Text(
-                                  'Region',
+                                  FFLocalizations.of(context).getText(
+                                    'kh69xvss' /* Region */,
+                                  ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -154,7 +164,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               children: [
                                 Expanded(
                                   child: Text(
-                                    '1,850',
+                                    FFLocalizations.of(context).getText(
+                                      'cej7ki0a' /* 1,850 */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .subtitle2
                                         .override(
@@ -167,7 +179,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Expanded(
                                   child: Text(
-                                    'Washed',
+                                    FFLocalizations.of(context).getText(
+                                      '805or1tn' /* Washed */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .subtitle2
                                         .override(
@@ -180,7 +194,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 ),
                                 Expanded(
                                   child: Text(
-                                    'Guji',
+                                    FFLocalizations.of(context).getText(
+                                      'jq0tu59m' /* Guji */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .subtitle2
                                         .override(
