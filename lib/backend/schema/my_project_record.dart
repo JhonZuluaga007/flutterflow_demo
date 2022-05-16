@@ -12,16 +12,35 @@ abstract class MyProjectRecord
       _$myProjectRecordSerializer;
 
   @nullable
-  DocumentReference get projectId;
+  @BuiltValueField(wireName: 'user_email')
+  String get userEmail;
 
   @nullable
-  DocumentReference get userId;
+  @BuiltValueField(wireName: 'project_title')
+  String get projectTitle;
+
+  @nullable
+  @BuiltValueField(wireName: 'project_tokens')
+  double get projectTokens;
+
+  @nullable
+  @BuiltValueField(wireName: 'project_description')
+  String get projectDescription;
+
+  @nullable
+  @BuiltValueField(wireName: 'project_images')
+  String get projectImages;
 
   @nullable
   @BuiltValueField(wireName: kDocumentReferenceField)
   DocumentReference get reference;
 
-  static void _initializeBuilder(MyProjectRecordBuilder builder) => builder;
+  static void _initializeBuilder(MyProjectRecordBuilder builder) => builder
+    ..userEmail = ''
+    ..projectTitle = ''
+    ..projectTokens = 0.0
+    ..projectDescription = ''
+    ..projectImages = '';
 
   static CollectionReference get collection =>
       FirebaseFirestore.instance.collection('myProject');
@@ -45,11 +64,17 @@ abstract class MyProjectRecord
 }
 
 Map<String, dynamic> createMyProjectRecordData({
-  DocumentReference projectId,
-  DocumentReference userId,
+  String userEmail,
+  String projectTitle,
+  double projectTokens,
+  String projectDescription,
+  String projectImages,
 }) =>
     serializers.toFirestore(
         MyProjectRecord.serializer,
         MyProjectRecord((m) => m
-          ..projectId = projectId
-          ..userId = userId));
+          ..userEmail = userEmail
+          ..projectTitle = projectTitle
+          ..projectTokens = projectTokens
+          ..projectDescription = projectDescription
+          ..projectImages = projectImages));

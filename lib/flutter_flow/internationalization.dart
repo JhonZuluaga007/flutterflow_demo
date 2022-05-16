@@ -45,63 +45,43 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // HomePage
   {
     'tk66xwoq': {
-      'es': 'Mis proyecto',
-      'en': 'Mis proyecto',
+      'es': 'Mi proyecto',
+      'en': 'My project',
     },
-    'ht2uhsi0': {
-      'es': 'Ethiopian Natural',
-      'en': 'Ethiopian Natural',
-    },
-    'ugsng7ba': {
-      'es': 'Meters',
+    '5zzhd7br': {
+      'es': 'Tokens',
       'en': 'Meters',
     },
-    '06fe8cb3': {
-      'es': 'Process',
-      'en': 'Process',
-    },
-    'kh69xvss': {
-      'es': 'Region',
-      'en': 'Region',
-    },
     'cej7ki0a': {
-      'es': '1,850',
+      'es': '1',
       'en': '1,850',
     },
-    '805or1tn': {
-      'es': 'Washed',
-      'en': 'Washed',
-    },
-    'jq0tu59m': {
-      'es': 'Guji',
-      'en': 'Guji',
-    },
     '0md4rokj': {
-      'es': 'Inicio',
+      'es': 'Home',
       'en': 'Home',
     },
   },
   // Login
   {
     'bxhhwg93': {
-      'es': 'Correo',
-      'en': 'Correo',
+      'es': 'email',
+      'en': 'email',
     },
     'g8m6nriu': {
-      'es': 'Contraseña',
-      'en': 'Contraseña',
+      'es': 'password',
+      'en': 'password',
     },
     'e88hwli0': {
-      'es': 'Acceso',
-      'en': 'Acceso',
+      'es': 'Login',
+      'en': 'Login',
     },
     '4euf2hmm': {
       'es': 'Olvidaste tu contraseña ?',
       'en': 'Olvidaste tu contraseña ?',
     },
     'osaqoygp': {
-      'es': 'No tienes una cuenta?',
-      'en': 'No tienes una cuenta?',
+      'es': 'Don\'t have an account?',
+      'en': 'Don\'t have an account?',
     },
     'dclajkbp': {
       'es': 'Registro',
@@ -111,36 +91,36 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   // Registry
   {
     'ahzz4do2': {
-      'es': 'Nombre completo',
-      'en': 'Nombre completo',
+      'es': 'full name',
+      'en': 'full name',
     },
     'dal9y0wd': {
-      'es': 'Nombre completo',
-      'en': 'Nombre completo',
+      'es': 'full Name',
+      'en': 'full Name',
     },
     'z8kw0knv': {
-      'es': 'Correo',
-      'en': 'Correo',
+      'es': 'email',
+      'en': 'email',
     },
     'yok1g5im': {
-      'es': 'Contraseña',
-      'en': 'Contraseña',
+      'es': 'password',
+      'en': 'password',
     },
     'al6fjrv2': {
-      'es': 'Confirma Contraseña',
-      'en': 'Confirma Contraseña',
+      'es': 'confirm password',
+      'en': 'confirm password',
     },
     'u8u29o4j': {
-      'es': 'Registro',
-      'en': 'Registro',
+      'es': 'Register',
+      'en': 'Register',
     },
     'z6rlr8cw': {
-      'es': 'Ya tienes una cuenta?',
-      'en': 'Ya tienes una cuenta?',
+      'es': 'do you already have an account?',
+      'en': 'do you already have an account?',
     },
     '9nfqfic4': {
-      'es': 'Acceso',
-      'en': 'Acceso',
+      'es': 'Login',
+      'en': 'Login',
     },
   },
   // ProjectDetails
@@ -158,8 +138,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'available tokens : ',
     },
     'cuvb58ws': {
-      'es': 'Descripción',
-      'en': 'Descripción',
+      'es': 'DESCRIPTION',
+      'en': 'DESCRIPTION',
     },
     'erftpqbj': {
       'es':
@@ -176,46 +156,46 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'per night',
     },
     'vx2kw8vj': {
-      'es': 'Compra ahora',
-      'en': 'Compra ahora',
+      'es': 'Buy now',
+      'en': 'Buy now',
     },
   },
   // Profile
   {
     '24k8qo1m': {
-      'es': 'Edita perfil',
-      'en': 'Edita perfil',
+      'es': 'Edit Profile',
+      'en': 'Edit Profile',
     },
     'bl7wt7kv': {
-      'es': 'Cambia contraseña',
-      'en': 'Cambia contraseña',
+      'es': 'Change Password',
+      'en': 'Change Password',
     },
     'dmro3645': {
-      'es': 'Configuración de notificaciones',
-      'en': 'Configuración de notificaciones',
+      'es': 'Notification Settings',
+      'en': 'Notification Settings',
     },
     'cqo5kk0n': {
-      'es': 'Terminos y condiciones',
-      'en': 'Terminos y condiciones',
+      'es': 'Terms of Services',
+      'en': 'Terms of Services',
     },
     '3fk9yc84': {
-      'es': 'Cerrar sesión',
-      'en': 'Cerrar sesión',
+      'es': 'Log Out',
+      'en': 'Log Out',
     },
   },
   // Project
   {
     'm2giqynk': {
-      'es': 'Proyecto',
-      'en': 'Proyecto',
+      'es': 'Project',
+      'en': 'Project',
     },
     'fihnnobs': {
-      'es': 'Busca acá...',
-      'en': 'Busca acá....',
+      'es': 'Type to search here...',
+      'en': 'Type to search here...',
     },
     'qziufx2c': {
-      'es': 'Detalles',
-      'en': 'Detalles',
+      'es': 'Details',
+      'en': 'Details',
     },
     '7b8l9c6f': {
       'es': 'Class Name',
@@ -285,27 +265,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Congrats!',
     },
     'f7qai3na': {
-      'es': 'Gracias por tu compra.',
-      'en': 'Gracias por tu compra.',
+      'es': 'Thanks for your purchase.',
+      'en': 'Thanks for your purchase.',
     },
     'ptyrqfjw': {
-      'es': 'Ve inicio',
-      'en': 'Ve inicio',
+      'es': 'Go Home',
+      'en': 'Go Home',
     },
     'fz676x9b': {
-      'es': 'Inicio',
-      'en': 'Inicio',
+      'es': 'Home',
+      'en': 'Home',
     },
   },
   // movementsPage
   {
     'a6n096zr': {
-      'es': 'Mis movimientos',
-      'en': 'Mis movimientos',
+      'es': 'My Movements',
+      'en': 'My Movements',
     },
     'b3kr4xp3': {
-      'es': 'Movimientos',
-      'en': 'Movimientos',
+      'es': 'Movemensts',
+      'en': 'Movemensts',
     },
   },
   // testPage
@@ -321,8 +301,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Hello World jjdhajdkhksjjjadkcjdshfkdsjfksdjfksdjfksdkjfskfjskdfjsdkfsklfjsdfjsldjskdfjslkfdjdwlkcnnkwdcnejkceineinienieniew',
     },
     'wyp60eo3': {
-      'es': 'Inicio',
-      'en': 'Inicio',
+      'es': 'Home',
+      'en': 'Home',
     },
   },
   // Miscellaneous

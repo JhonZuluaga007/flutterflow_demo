@@ -1,11 +1,18 @@
+import '../auth/auth_util.dart';
 import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class HomePageWidget extends StatefulWidget {
-  const HomePageWidget({Key key}) : super(key: key);
+  const HomePageWidget({
+    Key key,
+    this.proyectos,
+  }) : super(key: key);
+
+  final DocumentReference proyectos;
 
   @override
   _HomePageWidgetState createState() => _HomePageWidgetState();
@@ -39,7 +46,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: StreamBuilder<List<MyProjectRecord>>(
-          stream: queryMyProjectRecord(),
+          stream: queryMyProjectRecord(
+            queryBuilder: (myProjectRecord) => myProjectRecord
+                .where('user_email', isEqualTo: currentUserEmail),
+          ),
           builder: (context, snapshot) {
             // Customize what your widget looks like when it's loading.
             if (!snapshot.hasData) {
@@ -77,7 +87,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(8),
                             child: Image.network(
-                              'https://images.unsplash.com/photo-1607109793514-3075a25f6040?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBvdXIlMjBvdmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
+                              listViewMyProjectRecord.projectImages,
                               width: double.infinity,
                               height: 140,
                               fit: BoxFit.cover,
@@ -89,9 +99,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Text(
-                                  FFLocalizations.of(context).getText(
-                                    'ht2uhsi0' /* Ethiopian Natural */,
-                                  ),
+                                  listViewMyProjectRecord.projectTitle,
                                   style: FlutterFlowTheme.of(context)
                                       .title3
                                       .override(
@@ -109,9 +117,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             children: [
                               Expanded(
                                 child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'ugsng7ba' /* Meters */,
-                                  ),
+                                  listViewMyProjectRecord.projectDescription,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
                                       .override(
@@ -123,26 +129,15 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                       ),
                                 ),
                               ),
+                            ],
+                          ),
+                          Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
                               Expanded(
                                 child: Text(
                                   FFLocalizations.of(context).getText(
-                                    '06fe8cb3' /* Process */,
-                                  ),
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText1
-                                      .override(
-                                        fontFamily: 'Lexend Deca',
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBtnText,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.normal,
-                                      ),
-                                ),
-                              ),
-                              Expanded(
-                                child: Text(
-                                  FFLocalizations.of(context).getText(
-                                    'kh69xvss' /* Region */,
+                                    '5zzhd7br' /* Tokens */,
                                   ),
                                   style: FlutterFlowTheme.of(context)
                                       .bodyText1
@@ -165,37 +160,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 Expanded(
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'cej7ki0a' /* 1,850 */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .subtitle2
-                                        .override(
-                                          fontFamily: 'Roboto Mono',
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      '805or1tn' /* Washed */,
-                                    ),
-                                    style: FlutterFlowTheme.of(context)
-                                        .subtitle2
-                                        .override(
-                                          fontFamily: 'Roboto Mono',
-                                          color: Colors.white,
-                                          fontSize: 16,
-                                          fontWeight: FontWeight.w500,
-                                        ),
-                                  ),
-                                ),
-                                Expanded(
-                                  child: Text(
-                                    FFLocalizations.of(context).getText(
-                                      'jq0tu59m' /* Guji */,
+                                      'cej7ki0a' /* 1 */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .subtitle2
