@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "916192599321",
+    "project_id": "bero-bedad",
+    "storage_bucket": "bero-bedad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916192599321:android:21039b0c7500c79c223988",
+        "android_client_info": {
+          "package_name": "com.flutterflow.bero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916192599321-hdvf7dd6kjkfpscrr8rbknu4psql97hn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flutterflow.bero",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "916192599321-gviv9rshaui3dmsihhm1cn7jhvibgj22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ8KbALLzS2Rx6_FFtaJobuCnMtwDRC6o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916192599321-gviv9rshaui3dmsihhm1cn7jhvibgj22.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "916192599321-60uqsve6ufvj5uekvnqmabqulj85tjrg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.flutterflow.bero"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
