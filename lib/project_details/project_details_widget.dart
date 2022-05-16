@@ -5,6 +5,7 @@ import '../congrats/congrats_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -18,6 +19,7 @@ class ProjectDetailsWidget extends StatefulWidget {
 
 class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
   final scaffoldKey = GlobalKey<ScaffoldState>();
+  MyProjectRecord project;
   String paymentId;
 
   @override
@@ -355,7 +357,7 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                         FFButtonWidget(
                           onPressed: () async {
                             final paymentResponse = await processStripePayment(
-                              amount: columnProjectsRecord.valorToken.round(),
+                              amount: columnProjectsRecord.precio.round(),
                               currency: 'usd',
                               customerEmail: currentUserEmail,
                               customerName: 'bero store',
@@ -375,6 +377,24 @@ class _ProjectDetailsWidgetState extends State<ProjectDetailsWidget> {
                             }
                             paymentId = paymentResponse.paymentId;
 
+                            if ((paymentId) == (paymentId)) {
+                              final myProjectCreateData =
+                                  createMyProjectRecordData(
+                                userEmail: currentUserEmail,
+                                projectTitle: columnProjectsRecord.titulo,
+                                projectTokens: columnProjectsRecord.tokens,
+                                projectDescription:
+                                    columnProjectsRecord.descripcion,
+                                projectImages: columnProjectsRecord.urlImage,
+                              );
+                              var myProjectRecordReference =
+                                  MyProjectRecord.collection.doc();
+                              await myProjectRecordReference
+                                  .set(myProjectCreateData);
+                              project = MyProjectRecord.getDocumentFromData(
+                                  myProjectCreateData,
+                                  myProjectRecordReference);
+                            }
                             await Navigator.push(
                               context,
                               MaterialPageRoute(

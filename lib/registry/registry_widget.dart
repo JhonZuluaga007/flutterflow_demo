@@ -64,13 +64,13 @@ class _RegistryWidgetState extends State<RegistryWidget> {
                   padding: EdgeInsetsDirectional.fromSTEB(0, 70, 0, 90),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Image.asset(
-                        'assets/images/beroLogoBlanco.png',
+                        'assets/images/logoRobin@3x.png',
                         width: 242,
                         height: 60,
-                        fit: BoxFit.contain,
+                        fit: BoxFit.cover,
                       ),
                     ],
                   ),

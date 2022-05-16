@@ -145,10 +145,9 @@ class _NavBarPageState extends State<NavBarPage> {
               Icons.home_outlined,
               size: 24,
             ),
-            // label: FFLocalizations.of(context).getText(
-            //   '0md4rokj' /* Home */,
-            // ),
-            label: 'Inicio',
+            label: FFLocalizations.of(context).getText(
+              '0md4rokj' /* Home */,
+            ),
             tooltip: '',
           ),
           BottomNavigationBarItem(
@@ -156,7 +155,7 @@ class _NavBarPageState extends State<NavBarPage> {
               Icons.sync_alt_outlined,
               size: 24,
             ),
-            label: 'Proyectos',
+            label: '',
             tooltip: '',
           ),
           BottomNavigationBarItem(
@@ -174,7 +173,7 @@ class _NavBarPageState extends State<NavBarPage> {
               Icons.settings,
               size: 24,
             ),
-            label: 'Configuración',
+            label: '',
             tooltip: '',
           )
         ],
