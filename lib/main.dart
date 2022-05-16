@@ -41,6 +41,7 @@ class _MyAppState extends State<MyApp> {
 
   final authUserSub = authenticatedUserStream.listen((_) {});
 
+
   @override
   void initState() {
     super.initState();
